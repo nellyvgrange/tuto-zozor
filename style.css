@@ -1,0 +1,159 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Mise en page du header */
+
+h1 {
+    font-family: 'BallparkWeiner';
+    color:black;
+}
+
+header {
+    border: 1px blue solid;
+}
+
+nav {
+    float: right;
+    border: 1px red solid;
+    list-style-type: none;
+}
+
+ul li{
+    display: inline;
+}
+
+
+
+/* Mise en page du body */
+
+body {
+    background-image: url(tp_images_polices/images/fond_jaune.png);
+    font-family: 'Dayrom';
+    font-size: large;
+    border: 1px red solid;
+}
+
+.sanfransisco {
+    border-radius: 5px;
+}
+
+
+
+/* Mise en forme de l'image */
+
+
+
+/* Mise en forme de l'article */
+
+article h2 {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px red solid;
+}
+
+article {
+    display: inline-block;
+    width: 60%;
+    margin-left: 6%;
+}
+
+
+
+/* Mise en forme des liens */
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color:brown;
+    text-decoration: underline;
+}
+
+.active {
+    color: brown;
+    text-decoration: underline;
+}
+
+
+
+/* Mise en forme des paragraphes */
+
+article p {
+    text-align: justify;
+}
+
+
+
+/* Mise en forme de la section */
+
+section {
+    border: 1px red solid;
+    display: flex;
+}
+
+.épingle {
+    margin-top: 10px; 
+}
+
+/* Bloc aside */
+
+aside {
+    background-color:grey;
+    width: 260px; /* Largeur du bloc */
+    padding: 7px; /* Bordure interne */
+    margin: 20px; /* Bordure externe */
+    border-radius: 5px; /* Bords arrondis */
+    text-align: justify;
+    color: ivory;
+    float: right;
+    margin-right: 6%;
+    font-size: 90%;
+}
+
+.photo-identité {
+    text-align:center;
+}
+
+.réseaux {
+    display: flex;
+    justify-content: space-around; 
+}
+
+
+
+/* Mise en forme du footer */
+
+.footer {
+    display: inline-block;
+}
+
+.amis p {
+    color:brown;
+}
