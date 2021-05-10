@@ -11,7 +11,7 @@
     <body>
 
         <header>
-            <img src="tp_images_polices/images/zozor_logo.png" alt="logo" class="logo" />
+            <img src="img/zozor_logo.png" alt="logo" class="logo" />
             <h1 class="titre-1">Zozor</h1>
             <h2 class="titre-2">Carnets de voyage</h2>
 
@@ -24,20 +24,22 @@
                 </ul>
             </nav>
         </header>
-        <img src="tp_images_polices/images/separateur.png" alt="Séparateur" />
+
+        <div class="separateur"></div>
+
         <div class="en-tête">
             <figure>
-                <div class="sanfransisco"><img src="tp_images_polices/images/sanfrancisco.jpg" alt="San Fransisco" />
-                </div>
-                <figcaption>Retour sur mes vacances aux Etats-Unis...</figcaption>
-                <a href="article.html">Voir l'article</a>
+                <img src="img/sanfrancisco.jpg" alt="San Fransisco" class="sanfrancisco" />
+                <figcaption>Retour sur mes vacances aux Etats-Unis... <a href="article.html" class="bouton">Voir
+                        l'article</a>
+                </figcaption>
             </figure>
         </div>
 
         <section>
 
             <article>
-                <img src="tp_images_polices/images/ico_epingle.png" alt="épingle" class="épingle" />
+                <img src="img/ico_epingle.png" alt="épingle" class="épingle" />
                 <h2>JE SUIS UN GRAND VOYAGEUR</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi.
                     Cras id arcu lorem, et semper purus. Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -64,62 +66,58 @@
 
             <aside>
                 <h2>À PROPOS DE L'AUTEUR</h2>
-                <div class="photo-identité"><img src="tp_images_polices/images/zozor_classe.png" alt="Photo de Zozor" />
+                <div class="photo-identité"><img src="img/zozor_classe.png" alt="Photo de Zozor" />
                 </div>
                 <p>Laisse-moi le temps de me présenter : je m'appelle ZoZor, je suis né un 23 novembre 2005.</p>
                 <p>Bien maigre, n'est-ce pas ? C'est pourquoi, aujourd'hui, j'ai décidé d'écrire ma biographie (ou
                     zBiographie, comme vous voulez !) afin que les zéros sachent enfin qui je suis réellement.</p>
                 <div class="réseaux">
-                    <img src="tp_images_polices/images/facebook.png" alt="Facebook" class="Facebook" />
-                    <img src="tp_images_polices/images/twitter.png" alt="Twitter" class="Twitter" />
-                    <img src="tp_images_polices/images/vimeo.png" alt="Vimeo" class="Vimeo" />
-                    <img src="tp_images_polices/images/flickr.png" alt="Flickr" class="Flickr" />
-                    <img src="tp_images_polices/images/rss.png" alt="RSS" class="RSS" />
+                    <img src="img/facebook.png" alt="Facebook" class="Facebook" />
+                    <img src="img/twitter.png" alt="Twitter" class="Twitter" />
+                    <img src="img/vimeo.png" alt="Vimeo" class="Vimeo" />
+                    <img src="img/flickr.png" alt="Flickr" class="Flickr" />
+                    <img src="img/rss.png" alt="RSS" class="RSS" />
                 </div>
             </aside>
 
         </section>
 
-        <footer>
-            <div id="footer">
-                <div class="separateur"><img src="tp_images_polices/images/separateur.png" alt="Séparateur"
-                        class="Séparateur" /><img src="tp_images_polices/images/ico_top.png" alt="Icône"
-                        class="Icône" />
-                    <img src="tp_images_polices/images/separateur.png" alt="Séparateur" class="Séparateur" />
-                </div>
-                <div class="tweet">
-                    <h2>MON DERNIER TWEET</h2>
-                    <p>Hiii haaaaan !</p>
-                    <p>le 12 mai à 23h12</p>
-                </div>
-                <div class="photos">
-                    <h2>MES PHOTOS</h2>
-                    <img src="tp_images_polices/images/photo1.jpg" alt="photo1" />
-                    <img src="tp_images_polices/images/photo2.jpg" alt="photo2" />
-                    <img src="tp_images_polices/images/photo3.jpg" alt="photo3" />
-                    <img src="tp_images_polices/images/photo4.jpg" alt="photo4" />
-                </div>
-                <div class="amis">
-                    <h2>MES AMIS</h2>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Pupi le lapin</p>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Mr Baobab</p>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Kawaii</p>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Perceval.eu</p>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Belette</p>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Le concombre masqué</p>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Ptit prince</p>
-                    <img src="tp_images_polices/images/ico_liensexterne.png" alt="Liens_Externes" />
-                    <p>Mr Fan</p>
-                </div>
+        <div class="separateur"><img src="img/ico_top.png" alt="icône" class="icône" /></div>
 
+        <footer>
+
+            <div id="tweet">
+                <h2>Mon dernier tweet</h2>
+                <p>Hiii haaaaan !</p>
+                <p>le 12 mai à 23h12</p>
             </div>
+
+            <div id="photos">
+                <h2>Mes photos</h2>
+                <img src="img/photo1.jpg" alt="photo1" />
+                <img src="img/photo2.jpg" alt="photo2" />
+                <img src="img/photo3.jpg" alt="photo3" />
+                <img src="img/photo4.jpg" alt="photo4" />
+            </div>
+
+            <div id="amis">
+                <h2>Mes amis</h2>
+                <div id="liste-amis">
+                    <ul>
+                        <li>Pupi le lapin</li>
+                        <li>Mr Baobab</li>
+                        <li>Kawaii</li>
+                        <li>Perceval.eu</li>
+                    </ul>
+                    <ul>
+                        <li>Belette</li>
+                        <li>Le concombre masqué</li>
+                        <li>Ptit prince</li>
+                        <li>Mr Fan</li>
+                    </ul>
+                </div>
+            </div>
+
         </footer>
 
     </body>
