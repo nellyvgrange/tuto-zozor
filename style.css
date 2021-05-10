@@ -125,6 +125,7 @@ article p {
 a {
     color: grey;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a:hover {
@@ -160,7 +161,13 @@ section {
 
 
 
-/* Bloc aside */
+/* Aside */
+
+#à-propos {
+    display: flex;
+    width: 20%;
+    border: 1px red solid;
+}
 
 aside {
     background-color:grey;
@@ -173,6 +180,13 @@ aside {
     float: right;
     margin-right: 6%;
     font-size: 90%;
+    position: relative;
+    border: 1px red solid;
+}
+
+#bulle {
+    position: absolute;
+    border: 1px red solid;
 }
 
 .photo-identité {
@@ -186,7 +200,7 @@ aside {
 
 
 
-/* Mise en forme du footer */
+/* Footer */
 
 footer {
     display: flex;
