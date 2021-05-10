@@ -65,7 +65,7 @@ body {
     font-size: large;
 }
 
-.en-tête {
+#en-tete {
     border-radius: 5px;
 }
 
@@ -75,7 +75,7 @@ figure {
     width: 100%;
 }
 
-.sanfrancisco {
+#sanfrancisco {
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
@@ -93,7 +93,7 @@ figcaption {
     vertical-align: middle;
 }
 
-.bouton {
+#bouton {
     float: right;
     color: white;
 
@@ -133,14 +133,14 @@ a:hover {
     text-decoration: underline;
 }
 
-.active {
+#active {
     color: brown;
     text-decoration: underline;
 }
 
 
 
-.separateur {
+#separateur {
     background-image: url('img/separateur.png');
     height: 3px;
     width: 100%;
@@ -155,7 +155,7 @@ section {
     display: flex;
 }
 
-.épingle {
+#epingle {
     margin-top: 10px; 
 }
 
@@ -163,10 +163,9 @@ section {
 
 /* Aside */
 
-#à-propos {
+#a-propos {
     display: flex;
-    width: 20%;
-    border: 1px red solid;
+    position: relative;
 }
 
 aside {
@@ -180,20 +179,19 @@ aside {
     float: right;
     margin-right: 6%;
     font-size: 90%;
-    position: relative;
-    border: 1px red solid;
 }
 
 #bulle {
     position: absolute;
-    border: 1px red solid;
+    left: 0.7rem;
+    top: 11rem;
 }
 
-.photo-identité {
+#photo-identite {
     text-align:center;
 }
 
-.réseaux {
+#reseaux {
     display: flex;
     justify-content: space-around; 
 }
