@@ -24,9 +24,25 @@
     font-style: normal;
 }
 
+#page {
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+}
 
 
-/* Mise en page du header */
+/* Header */
+
+#titres {
+    display: flex;
+    flex-flow: column;
+    margin-top: 2rem;
+}
+
+#logo {
+    width: 5rem;
+    height: 5rem;
+}
 
 h1 {
     font-family: 'BallparkWeiner';
@@ -41,23 +57,42 @@ h2 {
 header {
     border: 1px red solid;
     display: flex;
-    flex-direction: column;
+    flex-flow: row;
+    position: relative;
+    height: 100px;
 }
 
-nav ul {
+header h2 {
+    text-transform: none;
+    font-size: x-large;
+}
+
+nav {
+    position: absolute;
+    right: 0rem;
+    bottom: 2rem;
+    width: 40%;
     border: 1px red solid;
-    justify-content: space-evenly;
+}
+
+#navigation {
     list-style-type: none; /* Suppression des puces */
-    display: inline; /* Menu sous forme de ligne */
+    display: flex-inline; /* Menu sous forme de ligne */
+    font-size: x-large;
+    justify-content: space-evenly;
 }
 
 nav ul li{
     display: inline; /* Menu sous forme de ligne */
 }
 
+nav a {
+    text-transform: uppercase;
+}
 
 
-/* Mise en page du body */
+
+/* Aspect général */
 
 body {
     background-image: url(img/fond_jaune.png);
@@ -65,13 +100,12 @@ body {
     font-size: large;
 }
 
-#en-tete {
-    border-radius: 5px;
-}
-
-
+/* En-tête */
 
 figure {
+    display: flex;
+    flex-flow: column;
+    position: relative;
     width: 100%;
 }
 
@@ -80,52 +114,42 @@ figure {
     -webkit-border-radius:7px;
     border-radius:7px;
     text-align: center;
-    width: 100%;
 }
 
-figcaption {
+ figcaption {
     width: 100%;
     height: 4rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius:7px;
     color: white;
-    position: relative;
-    vertical-align: middle;
+    position: absolute;
+    bottom: 0rem;
+}
+
+figcaption p {
+    margin-left: 1rem;
+    width: 50%;
+    display: inline-block;
 }
 
 #bouton {
     float: right;
     color: white;
-
+    background-image: url('img/fond_degraderouge.png');
+    height: 2rem;
+    width: 10rem;
+    font-size: larger;
+    border-radius:7px;
+    margin-right: 1rem;
+    text-align: center;
+    border: 1px red solid;
 }
 
-
-
-/* Mise en forme de l'article */
-
-article h2 {
-    display: inline-block;
-    vertical-align: top;
-}
-
-article {
-    display: inline-block;
-    width: 60%;
-    margin-left: 6%;
-}
-
-article p {
-    text-align: justify;
-}
-
-
-
-/* Mise en forme des liens */
+/* Liens */
 
 a {
     color: grey;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 a:hover {
@@ -138,8 +162,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
 #separateur {
     background-image: url('img/separateur.png');
     height: 3px;
@@ -147,9 +169,7 @@ a:hover {
     text-align: center;
 }
 
-
-
-/* Bloc section */
+/* Section */
 
 section {
     display: flex;
@@ -159,7 +179,20 @@ section {
     margin-top: 10px; 
 }
 
+/* Article */
 
+article h2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+article {
+    display: inline-block;
+}
+
+article p {
+    text-align: justify;
+}
 
 /* Aside */
 
@@ -179,6 +212,11 @@ aside {
     float: right;
     margin-right: 6%;
     font-size: 90%;
+    box-shadow: 2px 1px 1px grey;
+}
+
+aside h2 {
+    color: ivory;
 }
 
 #bulle {
@@ -195,8 +233,6 @@ aside {
     display: flex;
     justify-content: space-around; 
 }
-
-
 
 /* Footer */
 
