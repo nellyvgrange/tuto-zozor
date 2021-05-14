@@ -24,24 +24,17 @@
     font-style: normal;
 }
 
+/* Aspect global de la page */
+
+body {
+    background-image: url(img/fond_jaune.png);
+    font-family: 'Dayrom';
+    font-size: large;
+}
+
 #page {
     width: 90%;
-    margin-left:auto;
-    margin-right: auto;
-}
-
-
-/* Header */
-
-#titres {
-    display: flex;
-    flex-flow: column;
-    margin-top: 2rem;
-}
-
-#logo {
-    width: 5rem;
-    height: 5rem;
+    margin: auto;
 }
 
 h1 {
@@ -54,6 +47,8 @@ h2 {
     color: grey;
 }
 
+/* Mise en page du header */
+
 header {
     border: 1px red solid;
     display: flex;
@@ -62,23 +57,33 @@ header {
     height: 100px;
 }
 
-header h2 {
+#titres-1 {
+    border: 1px blue solid;
+    display: flex;
+    flex-flow: row;
+}
+
+#titres h2 {
     text-transform: none;
-    font-size: x-large;
+    font-size: large;
+}
+
+#logo {
+    width: 5rem;
+    height: 5rem;
 }
 
 nav {
     position: absolute;
-    right: 0rem;
-    bottom: 2rem;
-    width: 40%;
-    border: 1px red solid;
+    right: 2rem;
+    bottom: 1rem;
+    width: 35%;
 }
 
 #navigation {
     list-style-type: none; /* Suppression des puces */
-    display: flex-inline; /* Menu sous forme de ligne */
     font-size: x-large;
+    display: flex;
     justify-content: space-evenly;
 }
 
@@ -90,30 +95,19 @@ nav a {
     text-transform: uppercase;
 }
 
-
-
-/* Aspect général */
-
-body {
-    background-image: url(img/fond_jaune.png);
-    font-family: 'Dayrom';
-    font-size: large;
-}
-
-/* En-tête */
+/* Bannière */
 
 figure {
     display: flex;
     flex-flow: column;
     position: relative;
-    width: 100%;
+    width: 90%;
 }
 
 #sanfrancisco {
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
-    text-align: center;
 }
 
  figcaption {
@@ -133,7 +127,6 @@ figcaption p {
 }
 
 #bouton {
-    float: right;
     color: white;
     background-image: url('img/fond_degraderouge.png');
     height: 2rem;
@@ -142,7 +135,13 @@ figcaption p {
     border-radius:7px;
     margin-right: 1rem;
     text-align: center;
-    border: 1px red solid;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#bouton img {
+    border: 0;
 }
 
 /* Liens */
