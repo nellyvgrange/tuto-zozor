@@ -33,7 +33,7 @@ body {
 }
 
 #page {
-    width: 90%;
+    width: 50%;
     margin: auto;
 }
 
@@ -50,17 +50,24 @@ h2 {
 /* Mise en page du header */
 
 header {
-    border: 1px red solid;
     display: flex;
     flex-flow: row;
     position: relative;
     height: 100px;
 }
 
+#titres {
+    width: 11rem;
+    justify-content: space-between;
+}
+
 #titres-1 {
-    border: 1px blue solid;
     display: flex;
     flex-flow: row;
+}
+
+#titre-zozor {
+    text-align: right;
 }
 
 #titres h2 {
@@ -75,8 +82,8 @@ header {
 
 nav {
     position: absolute;
-    right: 2rem;
-    bottom: 1rem;
+    right: 1rem;
+    bottom: 0.2rem;
     width: 35%;
 }
 
@@ -97,20 +104,21 @@ nav a {
 
 /* Bannière */
 
-figure {
+#banniere {
     display: flex;
     flex-flow: column;
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
 #sanfrancisco {
-    -moz-border-radius:7px;
-    -webkit-border-radius:7px;
-    border-radius:7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0px 0.5px 1px 0px grey;
 }
 
- figcaption {
+ #titre_banniere {
     width: 100%;
     height: 4rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -120,7 +128,7 @@ figure {
     bottom: 0rem;
 }
 
-figcaption p {
+#titre_banniere p {
     margin-left: 1rem;
     width: 50%;
     display: inline-block;
@@ -131,7 +139,7 @@ figcaption p {
     background-image: url('img/fond_degraderouge.png');
     height: 2rem;
     width: 10rem;
-    font-size: larger;
+    font-size: large;
     border-radius:7px;
     margin-right: 1rem;
     text-align: center;
@@ -147,17 +155,12 @@ figcaption p {
 /* Liens */
 
 a {
-    color: grey;
+    color: black;
     text-decoration: none;
 }
 
 a:hover {
     color:brown;
-    text-decoration: underline;
-}
-
-#active {
-    color: brown;
     text-decoration: underline;
 }
 
@@ -172,10 +175,11 @@ a:hover {
 
 section {
     display: flex;
+    width: 100%;
 }
 
 #epingle {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 /* Article */
@@ -204,12 +208,11 @@ aside {
     background-color:grey;
     width: 260px; /* Largeur du bloc */
     padding: 7px; /* Bordure interne */
-    margin: 20px; /* Bordure externe */
+    margin: 20px 0px 20px 20px; /* Bordure externe */
     border-radius: 5px; /* Bords arrondis */
     text-align: justify;
     color: ivory;
     float: right;
-    margin-right: 6%;
     font-size: 90%;
     box-shadow: 2px 1px 1px grey;
 }
@@ -226,6 +229,7 @@ aside h2 {
 
 #photo-identite {
     text-align:center;
+    border-image: black;
 }
 
 #reseaux {
@@ -238,10 +242,11 @@ aside h2 {
 footer {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 #tweet {
-    width: 300px;
+    width: 280px;
     color: grey;
 }
 
